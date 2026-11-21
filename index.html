@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page setup: character support, responsive sizing, tab title, and shared stylesheet. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | MyProfile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme control: lets user switch between light and dark colors. -->
+  <input type="checkbox" id="theme-switch" class="theme-input" aria-label="Toggle light and dark mode" />
+
+  <!-- Site header: profile name links home, and the label is the theme toggle button. -->
+  <header class="navbar">
+    <h1 class="logo"><a href="index.html">MyProfile</a></h1>
+    <label for="theme-switch" class="theme-btn" title="Toggle light and dark mode" aria-label="Toggle light and dark mode">
+      <span class="icon sun">🌙</span>
+      <span class="icon moon">☀️</span>
+    </label>
+  </header>
+
+  <!-- Main navigation: each link opens a separate portfolio page. -->
+  <nav class="section-nav" aria-label="Portfolio sections">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="about.html">About me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Home page content: visitors see when they first open the site. -->
+  <main class="content">
+    <section class="portfolio-section home-section" aria-labelledby="home-heading">
+      <div class="home-hero">
+        <p class="home-eyebrow">Portfolio</p>
+        <h2 id="home-heading">Welcome to My Profile</h2>
+        <p>Explore my profile and get to know me better by choosing a category from the navigation!</p>
+        <a class="home-button" href="about.html">Explore portfolio <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

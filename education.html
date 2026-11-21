@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page setup: character support, responsive sizing, tab title, and shared stylesheet. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education | MyProfile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="education-page">
+  <!-- Theme control: CSS reads this checkbox to switch the page color theme. -->
+  <input type="checkbox" id="theme-switch" class="theme-input" aria-label="Toggle light and dark mode" />
+
+  <!-- Site header: profile name links home; the label toggles light/dark mode. -->
+  <header class="navbar">
+    <h1 class="logo"><a href="index.html">MyProfile</a></h1>
+    <label for="theme-switch" class="theme-btn" title="Toggle light and dark mode" aria-label="Toggle light and dark mode">
+      <span class="icon sun">🌙</span>
+      <span class="icon moon">☀️</span>
+    </label>
+  </header>
+
+  <!-- Main navigation: shortcuts to Home and each portfolio category page. -->
+  <nav class="section-nav" aria-label="Portfolio sections">
+    <a href="index.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="education.html" aria-current="page">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Education timeline: each card shows a school, batch, level, and any honors. -->
+  <main class="content education-content">
+    <section class="portfolio-section education-intro" aria-labelledby="education-heading">
+      <b class="education-eyebrow">| Academic Journey</b>
+      <h2 id="education-heading">Education</h2>
+    </section>
+
+    <section class="education-list" aria-label="Education history">
+      <article class="education-card">
+        <div class="education-year">BATCH 2019-2020</div>
+        <div class="education-details">
+          <h3>Paciano Rizal Elementary School</h3>
+          <p>Elementary</p>
+        </div>
+      </article>
+
+      <article class="education-card">
+        <div class="education-year">BATCH 2023-2024</div>
+        <div class="education-details">
+          <h3>Anselmo A. Sandoval Memorial National High School</h3>
+          <p>Junior High School</p>
+        </div>
+      </article>
+
+      <article class="education-card">
+        <div class="education-year">BATCH 2025-2026</div>
+        <div class="education-details">
+          <h3>Anselmo A. Sandoval Memorial National High School</h3>
+          <p>Senior High School</p>
+          <b>| With Honors</b>
+        </div>
+      </article>
+
+      <article class="education-card">
+        <div class="education-year">CURRENTLY STUDYING IN</div>
+        <div class="education-details">
+          <h3>Batangas State University</h3>
+          <p>College</p>
+          <b>| BSIT</b>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

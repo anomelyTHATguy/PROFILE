@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page setup: character support, responsive sizing, tab title, and shared stylesheet. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MyProfile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-page">
+  <!-- Theme control: lets user switch between light and dark colors. -->
+  <input type="checkbox" id="theme-switch" class="theme-input" aria-label="Toggle light and dark mode" />
+
+  <!-- Site header: profile name links home; the label toggles light/dark mode. -->
+  <header class="navbar">
+    <h1 class="logo"><a href="index.html">MyProfile</a></h1>
+    <label for="theme-switch" class="theme-btn" title="Toggle light and dark mode" aria-label="Toggle light and dark mode">
+      <span class="icon sun">🌙</span>
+      <span class="icon moon">☀️</span>
+    </label>
+  </header>
+
+  <!-- Main navigation: shortcuts to Home and each portfolio category page. -->
+  <nav class="section-nav" aria-label="Portfolio sections">
+    <a href="index.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+
+  <!-- Contact page content: add the contact details visitors to use here. -->
+  <main class="content">
+    <section class="portfolio-section contact-card" aria-labelledby="contact-heading">
+      <header class="contact-header">
+        <p class="contact-eyebrow">Let&apos;s connect</p>
+        <h2 id="contact-heading">Contact Me</h2>
+        <p>Feel free to reach out to me anytime!</p>
+      </header>
+
+      <div class="contact-actions">
+        <button class="contact-item" type="button" data-copy="francinediamante0808@gmail.com" aria-label="Copy email address">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">francinediamante0808@gmail.com</span>
+          </span>
+          <span class="contact-copy" aria-hidden="true">Copy</span>
+        </button>
+
+        <button class="contact-item" type="button" data-copy="+63 9916 939 924" aria-label="Copy phone number">
+          <span class="contact-icon" aria-hidden="true">☎</span>
+          <span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+63 916 939 924</span>
+          </span>
+          <span class="contact-copy" aria-hidden="true">Copy</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const text = button.dataset.copy;
+        const copyLabel = button.querySelector(".contact-copy");
+
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.opacity = "0";
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand("copy");
+          textArea.remove();
+        }
+
+        copyLabel.textContent = "Copied";
+        button.classList.add("copied");
+
+        window.setTimeout(() => {
+          copyLabel.textContent = "Copy";
+          button.classList.remove("copied");
+        }, 1800);
+      });
+    });
+  </script>
+
+</body>
+</html>

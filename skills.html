@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page setup: character support, responsive sizing, tab title, and shared stylesheet. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | MyProfile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme control: lets user switch between light and dark colors. -->
+  <input type="checkbox" id="theme-switch" class="theme-input" aria-label="Toggle light and dark mode" />
+
+  <!-- Site header: profile name links home; the label toggles light/dark mode. -->
+  <header class="navbar">
+    <h1 class="logo"><a href="index.html">MyProfile</a></h1>
+    <label for="theme-switch" class="theme-btn" title="Toggle light and dark mode" aria-label="Toggle light and dark mode">
+      <span class="icon sun">🌙</span>
+      <span class="icon moon">☀️</span>
+    </label>
+  </header>
+
+  <!-- Main navigation: shortcuts to Home and each portfolio category page. -->
+  <nav class="section-nav" aria-label="Portfolio sections">
+    <a href="index.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html" aria-current="page">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Skills page content: replace the example sentence with your skills and expertise. -->
+  <main class="content">
+    <section class="portfolio-section skills-section" aria-labelledby="skills-heading">
+      <header class="skills-header">
+        <h2 id="skills-heading">Skills</h2>
+      </header>
+
+      <div class="skills-grid">
+        <article class="skill-card" tabindex="0">
+          <h3>| Design</h3>
+          <ul>
+            <li>Logo design &amp; brand marks</li>
+            <li>Landscape banners &amp; social media graphics</li>
+            <li>Layout, typography &amp; visual composition</li>
+          </ul>
+        </article>
+
+        <article class="skill-card" tabindex="0">
+          <h3>| Video &amp; Content</h3>
+          <ul>
+            <li>Short-form video editing (CapCut)</li>
+            <li>Canva — presentations, thumbnails, static + animated graphics</li>
+          </ul>
+        </article>
+
+        <article class="skill-card" tabindex="0">
+          <h3>| Development</h3>
+          <ul>
+            <li>HTML — page structure &amp; simple layouts</li>
+            <li>C++ — fundamentals: syntax, logic, problem-solving</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

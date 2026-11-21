@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page setup: character support, responsive sizing, tab title, and shared stylesheet. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me | MyProfile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme control: lets user switch between light and dark colors. -->
+  <input type="checkbox" id="theme-switch" class="theme-input" aria-label="Toggle light and dark mode" />
+
+  <!-- Site header: profile name links home; the label toggles light/dark mode. -->
+  <header class="navbar">
+    <h1 class="logo"><a href="index.html">MyProfile</a></h1>
+    <label for="theme-switch" class="theme-btn" title="Toggle light and dark mode" aria-label="Toggle light and dark mode">
+      <span class="icon sun">🌙</span>
+      <span class="icon moon">☀️</span>
+    </label>
+  </header>
+
+  <!-- Main navigation: shortcuts to Home and each portfolio category page. -->
+  <nav class="section-nav" aria-label="Portfolio sections">
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- About page content: replace the example text with mys personal introduction. -->
+  <main class="content about-content">
+    <section class="portfolio-section about-feature-section">
+      <div class="about-intro">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-description">
+        <p>Hello there! My name is Francine Emerald M. Diamante, and I am passionate about writings some things when motivation hits, and learning new things as I go and eager to apply what I've learned in the classroom to real-world challenges.</p>
+        <p>I am the oldest child of my parents and have three little brothers, two of them attending high school and our youngest attending elementary school.</p>
+      </div>
+    </section>
+    <!-- Music section: links to songs I enjoy listening to. -->
+    <section class="portfolio-section music-portfolio-section" aria-labelledby="music-heading">
+      <div class="music-intro">
+        <p class="music-eyebrow">A little soundtrack</p>
+        <h2 id="music-heading">Some songs on repeat</h2>
+        <p>List of musics i like to listen to.</p>
+      </div>
+      <ul class="track-list">
+        <li>
+          <a class="track-card" href="https://open.spotify.com/track/2hVXlhlD2jsh1Ly22euRmW?si=66159afa6cd147ff" target="_blank" rel="noopener noreferrer">
+            <span class="track-disc" aria-hidden="true"><span class="track-disc-label"></span></span>
+            <span class="track-info">
+              <span class="track-title">Standing in the Rain</span>
+              <span class="track-action">Listen on Spotify ↗</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="track-card" href="https://open.spotify.com/track/6pWlv50Lthad8jyd6f1TlC?si=49e6be0fad2b43cf" target="_blank" rel="noopener noreferrer">
+            <span class="track-disc" aria-hidden="true"><span class="track-disc-label"></span></span>
+            <span class="track-info">
+              <span class="track-title">Harpy Hare</span>
+              <span class="track-action">Listen on Spotify ↗</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="track-card" href="https://open.spotify.com/track/73MWNenV7mQGUdXB8npY4H?si=5cf9956214f7468f" target="_blank" rel="noopener noreferrer">
+            <span class="track-disc" aria-hidden="true"><span class="track-disc-label"></span></span>
+            <span class="track-info">
+              <span class="track-title">The Fine Print</span>
+              <span class="track-action">Listen on Spotify ↗</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="track-card" href="https://open.spotify.com/track/4femsEly2KDon1wgtsPSfK?si=c4a4cb4aa7b84f85" target="_blank" rel="noopener noreferrer">
+            <span class="track-disc" aria-hidden="true"><span class="track-disc-label"></span></span>
+            <span class="track-info">
+              <span class="track-title">Nocturne in C minor, B. 108</span>
+              <span class="track-action">Listen on Spotify ↗</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- Hobbies section: cards summarize what I enjoy doing in my free time. -->
+    <section class="portfolio-section hobbies-section" aria-labelledby="hobbies-heading">
+      <div class="music-intro">
+        <p class="music-eyebrow">In my free time</p>
+        <h2 id="hobbies-heading">Things I enjoy</h2>
+      </div>
+      <ul class="hobby-list">
+        <li class="hobby-card">
+          <h3>Reading manga and manhwa</h3>
+          <p>Enjoying stories and discovering new series.</p>
+        </li>
+        <li class="hobby-card">
+          <h3>Watching anime</h3>
+          <p>Watching anime whenever I have free time.</p>
+        </li>
+        <li class="hobby-card">
+          <h3>Playing games</h3>
+          <p>Playing games I like in my spare time.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+</html>
