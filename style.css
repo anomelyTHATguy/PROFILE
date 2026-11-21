@@ -7,7 +7,7 @@
   --bg: #ffffff;
   --surface: #f4f5f7;
   --text: #1a1a1a;
-  --muted: #6b7280;
+  --muted: #73575f;
   --accent: #390000;
   --music-hover: var(--accent);
   --border: #e2e4e9;
@@ -18,7 +18,7 @@ body:has(.theme-input:checked) {
   --bg: #0f1115;
   --surface: #1a1d24;
   --text: #f1f3f5;
-  --muted: #c0c7d1;
+  --muted: #dcc1c8;
   --accent: #f4d8de;
   --music-hover: #f4d8de;
   --border: #2a2f3a;
